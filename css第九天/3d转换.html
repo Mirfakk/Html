@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            /* 透视写到被观察元素的父盒子上 
+            近大远小*/
+            perspective: 150px;
+        }
+
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /* transform: translate(100px, 100px); */
+            /* transform: translate(100px) translateY(100px) translateZ(100px); */
+            /* translateZ 沿着Z轴移动 */
+            /* translateZ 后面的单位我们一般跟px */
+            /* translateZ(100px) 向外移动100px */
+            /* translateZ(-100px) 向内移动100px */
+            /* 3d移动有简写的方法 */
+            /* transform: translate3d(x,y,z); */
+            transform: translate3d(500px, 100px, 100px);
+            /* xyz不能省略，如果没有就写0 */
+
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+
+    </div>
+</body>
+
+</html>

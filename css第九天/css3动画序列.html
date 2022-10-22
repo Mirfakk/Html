@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes move {
+
+            /* 动画序列可以做多个状态的变化
+            每个阶段的百分比尽量写整数
+            里面百分比是总时间的划分 */
+            /* 从哪里开始
+            from {
+                transform: translate(0, 0);
+            }
+
+            到哪里结束
+            to {
+                transform: translate(300px, 300px);
+            } */
+            0% {
+                transform: translate(0, 0);
+            }
+
+            25% {
+                transform: translate(500px, 0);
+            }
+
+            50% {
+                transform: translate(500px, 500px);
+            }
+
+            75% {
+                transform: translate(0px, 500px);
+            }
+
+            100% {
+                transform: translate(0, 0);
+            }
+
+        }
+
+        /* 我们想页面一打开，一个盒子就从左边走到右边 */
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /* 2.调用动画  move是名字*/
+            animation-name: move;
+            /* 持续时间 */
+            animation-duration: 5s;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

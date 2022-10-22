@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 多个块级元素纵向排列找标准流 ，多个块级元素横向排列找浮动 */
+        div {
+
+            display: inline-block;
+            width: 130px;
+            height: 130px;
+            background-color: palevioletred;
+        }
+
+        .one {
+            float: left;
+        }
+
+        .two {
+            float: right;
+        }
+
+        .three {
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="one">1</div>
+    <div class="two">2</div>
+    <div class="three">3</div>
+</body>
+
+</html>

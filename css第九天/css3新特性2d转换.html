@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 移动盒子的三个方法：定位 外边距 2d转换 
+        translate不会影响其他元素的位置
+        其中的50%是基于自身的元素的
+        对行内元素没有效果*/
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /* x是x轴上移动位置   y是y轴上移动位置  */
+            /* transform: translate(x, y); */
+            /* transform: translate(100px, 100px); */
+            /* 如果只移动x坐标 */
+            /* transform: translate(100px, 0); */
+            /* transform: translateX(100px); */
+
+            /* 如果只移动y坐标 */
+            /* transform: translate(0, 100px); */
+            /* transform: translateY(100px); */
+        }
+
+        /* 第一个盒子移动不会影响其他盒子 */
+        div:first-child {
+            transform: translate(30px, 30px);
+        }
+
+        div:last-child {
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+    <div></div>
+</body>
+
+</html>

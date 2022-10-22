@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 直角三角形的做法 */
+        .box1 {
+            width: 0;
+            height: 0;
+            /* 下和左为0px  上为100px透明色 */
+            /* border-top: 100px solid transparent;
+            border-right: 50px solid salmon;
+            border-left: 0px solid rgb(250, 229, 4);
+            border-bottom: 0px solid rgb(21, 255, 0); */
+            /* 简写 */
+            /* 1.只保留右边的边框有颜色  */
+            border-color: transparent red transparent transparent;
+            /* 2.样式都是solid  */
+            border-style: solid;
+            /* 3.上边框宽度要大，有边框宽度稍微小，其余边框为 */
+            border-width: 100px 50px 0 0;
+        }
+
+        .price {
+            width: 160px;
+            height: 24px;
+            border: 1px salmon solid;
+            margin: 0 auto;
+            /* line-height会继承给两个span */
+            line-height: 24px;
+        }
+
+        .miaosha {
+            position: relative;
+            float: left;
+            width: 90px;
+            height: 100%;
+            background-color: red;
+            text-align: center;
+            color: aliceblue;
+            font-weight: 700;
+        }
+
+        .miaosha i {
+            /* 子相父绝 */
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 0;
+            height: 0;
+            border-color: transparent rgb(255, 255, 255) transparent transparent;
+            border-style: solid;
+            border-width: 24px 10px 0px 0px;
+
+        }
+
+        .origin {
+            font-size: 12px;
+            color: gray;
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <div class="price">
+        <span class="miaosha">
+            ￥1699
+            <!-- i标签专门做三角 -->
+            <i></i>
+        </span>
+        <span class="origin">￥5699</span>
+    </div>
+</body>
+
+</html>

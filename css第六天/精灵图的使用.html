@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 精灵图主要是为了减轻服务器的压力而采用，精灵技术主要针对于背景图片的使用
+        就是把多个小背景图片整合到一张大图片中 这个大图片叫精灵图或者雪碧图
+        一开始在左上角，上左负值  右下正值  */
+        .box1 {
+            width: 60px;
+            height: 60px;
+            margin: 100px auto;
+            /* 一开始背景图片贴着左上角显示，这时候需要将x y 位置调整好即可显示想要的区域 */
+            background: url(sprites.png) -182px 0;
+            /* 可以连写 */
+            /* background-position: -182px 0; */
+
+        }
+
+        .box2 {
+            width: 25px;
+            height: 25px;
+            margin: 100px auto;
+
+            /* 一开始背景图片贴着左上角显示，这时候需要将x y 位置调整好即可显示想要的区域 */
+            background: url(sprites.png) -156px -107px;
+            /* 可以连写 */
+            /* background-position: -182px 0; */
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+
+</html>

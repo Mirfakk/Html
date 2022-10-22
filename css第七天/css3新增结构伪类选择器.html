@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 1.选择ul里第一个孩子 */
+        ul li:first-child {
+            background-color: aqua;
+        }
+
+        /* 2.选择ul里最后一个孩子 */
+        ul li:last-child {
+            background-color: aqua;
+        }
+
+        /* 3.选择ul里第几个孩子 */
+        ul li:nth-child(5) {
+            background-color: aqua;
+        }
+
+        /* 4.自由选择ul里第几个到第几个孩子 */
+        /* even 所有偶数  odd 所有奇数 */
+        ul li:nth-child(odd) {
+            background-color: rgb(251, 255, 0);
+        }
+
+        /* 5. :nth-child(n) 从0开始，每次加一，往后面计算这里面必须是n 不能是其他字母 */
+        /* n 2n 3n 4n...... */
+        /* 2n选择了所有的偶数孩子 等于even 
+        n+5 从第五个开始  -n+5 前五个 */
+        ol li:nth-child(3n+1) {
+            background-color: rgb(251, 255, 0);
+        }
+
+        ol li:nth-child(n+5) {
+            background-color: rgb(175, 93, 17);
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>我是第1个孩子</li>
+        <li>我是第2个孩子</li>
+        <li>我是第3个孩子</li>
+        <li>我是第4个孩子</li>
+        <li>我是第5个孩子</li>
+        <li>我是第6个孩子</li>
+        <li>我是第7个孩子</li>
+        <li>我是第8个孩子</li>
+    </ul>
+    <ol>
+        <li>我是第1个孩子</li>
+        <li>我是第2个孩子</li>
+        <li>我是第3个孩子</li>
+        <li>我是第4个孩子</li>
+        <li>我是第5个孩子</li>
+        <li>我是第6个孩子</li>
+        <li>我是第7个孩子</li>
+        <li>我是第8个孩子</li>
+    </ol>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>利用vertical-align实现图片文字垂直居中对齐</title>
+    <style>
+        img {
+            /* 行内块元素才可以添加该属性 需要可以先转换 */
+            /* 图片文字顶线对齐 */
+            /* vertical-align: top; */
+            /* 图片文字中线对齐 */
+            /* vertical-align: middle; */
+            /* 图片文字基线对齐 */
+            vertical-align: baseline;
+            /* 图片文字底线对齐 */
+            /* vertical-align: bottom; */
+        }
+    </style>
+</head>
+
+<body>
+    <img src="img.webp" alt="">ppj计算机四女寺您飞鸟pink
+    <br>
+    请您留言<textarea name="" id="" cols="30" rows="10" style="vertical-align: middle;"></textarea>
+
+
+
+</body>
+
+</html>

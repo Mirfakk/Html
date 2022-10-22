@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+
+            height: 200px;
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 常见的块元素有<h1-h6> p div ul ol li 等 div用的最多
+        独占一行 ，可以设置高宽内外边距 宽度默认是容器（父级宽度）的100%
+    是一个盒子，里面可以存放行内和块内元素
+    注意！！文字里面不能使用块元素 p里面不能再放div
+    h1-h6和p就放一些文字就好了 -->
+    <div>自己独占一行</div>瑟瑟发抖另起一行
+    <span>一行多个</span>瑟瑟发抖另起一行
+    <!-- 注意！！文字里面不能使用块元素 p里面不能再放div
+    浏览器按f12 可以看到p标签变成两个， div插在两个p之间 -->
+    <p>
+    <div>这里有问题</div>
+    </p>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        伪元素清除浮动核心原理
+        单独一个 : 冒号是为了照顾兼容性，隔墙法清除浮动用的就是伪元素 */
+        /* .clearfix:after {
+            content是必带的
+            content: "";
+            在浮动后面插入一个盒子，必须是块级元素
+            display: block;
+            高度为0，看不见这个元素
+            height: 0;
+            清除浮动核心代码
+            clear: both;
+            隐藏元素
+            visibility: hidden;
+
+        } */
+        /* 双伪元素，双隔墙 */
+        /* .clearfix:before,
+        .clearfix:after {
+            content是必带的 content: "";
+            如果是两个块级 就成为一列显示，不能在一行显示，所以使用table 使其在一行显示 
+            display: table;
+        }
+
+        .clearfix:after {
+            清除浮动核心代码
+            clear: both;
+        } */
+    </style>
+</head>
+
+<body>
+
+</body>
+
+</html>

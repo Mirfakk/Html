@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 以前默认的盒子大小 box-sizing:content-box = width + padding + border 
+        css3新增border-box  只看width的大小 前提是 padding和border不会超过width的大小*/
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            border: 20px solid saddlebrown;
+            padding: 15px;
+            /* 如果是 content 就是 200+15*4+20*4 */
+            box-sizing: content-box;
+        }
+
+        p {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            border: 20px solid saddlebrown;
+            padding: 15px;
+            /* 如果是 border-box 就是 width的200*/
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div>小猪佩奇</div>
+    <p>
+        小猪佩奇
+    </p>
+</body>
+
+</html>

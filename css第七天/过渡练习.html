@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 还有一种方法，用一个div加边框，就能够出同样的效果 */
+        .bar {
+            width: 1200px;
+            height: 150px;
+            border: 1px springgreen solid;
+            border-radius: 5px;
+        }
+
+        .bar_in {
+            width: 50px;
+            height: 150px;
+            background-color: rgb(226, 255, 6);
+            transition: all 3s;
+            /* 圆角 左下 右上 右下 左上 */
+            border-radius: 5px 5px 5px 5px;
+
+        }
+
+        .bar_in:hover {
+            width: 1200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bar">
+        <div class="bar_in"></div>
+    </div>
+</body>
+
+</html>

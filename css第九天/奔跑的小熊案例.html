@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #ccc;
+            background: url(../images/bg1.png) repeat-x;
+            animation: move1 50s ease infinite;
+        }
+
+        div {
+            position: absolute;
+            top: 230px;
+            width: 200px;
+            height: 100px;
+            background: url(../images/bear.png) no-repeat;
+            /* 我们元素可以添加多个动画，用逗号分割 */
+            animation: bear 1s steps(8) infinite, move 8s forwards;
+        }
+
+        @keyframes bear {
+            0% {
+                background-position: 0 0;
+            }
+
+            100% {
+                background-position: -1600px 0;
+            }
+
+        }
+
+        @keyframes move {
+            0% {
+                left: 0;
+            }
+
+            100% {
+                left: 50%;
+                /* 走自己宽度的一半 */
+                transform: translateX(-50%);
+            }
+        }
+
+        @keyframes move1 {
+            0% {
+                background-position: 0 0;
+            }
+
+            100% {
+                background-position: -1600px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+
+    </div>
+</body>
+
+</html>

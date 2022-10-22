@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 用定位子绝父相配合translate来实现水平垂直居中比较合适 */
+        div {
+            position: relative;
+            width: 500px;
+            height: 500px;
+            background-color: aqua;
+            /* 1，translate参数可以用百分号，移动距离是盒子自身的宽高来对比的 */
+
+        }
+
+        p {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background-color: bisque;
+            top: 50%;
+            left: 50%;
+            /* 以前的做法 */
+            /* margin-top: -100px;
+            margin-left: -100px; */
+            /* 盒子往上往左走自己高度的一半 */
+            transform: translate(-50%, -50%);
+        }
+
+        span {
+            /* teanslate对行内元素是无效的 */
+            transform: translate(300px, 300px);
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p></p>
+    </div>
+    <span>123</span>
+</body>
+
+</html>

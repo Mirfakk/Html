@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+
+        }
+
+        .tb-promo {
+            position: relative;
+            width: 846px;
+            height: 472px;
+            /* background-color: pink; */
+            margin: 100px auto;
+
+        }
+
+        .tb-promo img {
+
+            width: 846px;
+            height: 472px;
+        }
+
+        /* 并集选择器可以集体声明相同的样式  */
+        .prev,
+        .next {
+            position: absolute;
+            top: 50%;
+            width: 20px;
+            height: 30px;
+            background-color: rgba(0, 0, 0, .5);
+            margin-top: -15px;
+            color: #fff;
+        }
+
+        .prev {
+            /* 加了绝对定位的盒子可以直接设置宽高 */
+            left: 0;
+            /* border-radius: 0px 15px 15px 0px; */
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+
+        .next {
+            /* 加了绝对定位的盒子可以直接设置宽高 */
+            /* 如果一个盒子既有left属性也有right属性，则会默认执行left属性
+                top 和 bottom 先执行top */
+            right: 0;
+            /* border-radius: 15px 0px 0px 15px; */
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+        }
+
+        .promo-nav {
+            position: absolute;
+            bottom: 15px;
+            left: 50%;
+            background-color: rgba(255, 255, 255, .3);
+            width: 70px;
+            height: 13px;
+            margin-left: -35px;
+            list-style: none;
+            border-radius: 7px
+        }
+
+        .promo-nav li {
+            float: left;
+            margin: 2.5px 3px 3px 3px;
+            width: 8px;
+            height: 8px;
+            background-color: #fff;
+            border-radius: 4px;
+
+        }
+
+        /* .promo-nav li:hover {
+            background-color: rgb(238, 93, 40);
+        } */
+        .promo-nav .select {
+            background-color: rgb(238, 93, 40);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tb-promo">
+        <img src="tb.png" alt="">
+        <!-- 左侧按钮箭头 -->
+        <a href="" class="prev">
+            《</a>
+        <!-- 右侧按钮箭头 -->
+        <a href="" class="next">》</a>
+        <ul class="promo-nav">
+            <li class="select"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+
+        </ul>
+    </div>
+</body>
+
+</html>

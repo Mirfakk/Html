@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>h5新特性:语义化标签</title>
+    <style>
+        header,
+        footer,
+        nav {
+            height: 120px;
+            background-color: pink;
+            border-radius: 15px;
+            width: 800px;
+            margin: 15px auto;
+            text-align: center;
+            line-height: 120px;
+        }
+
+        section {
+            width: 500px;
+            height: 300px;
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+
+<body>
+    <header>头部标签</header>
+    <nav>导航栏标签</nav>
+    <article>文章域</article>
+    <aside>侧边栏</aside>
+    <section>定义文档某个区域（大号div）</section>
+    <footer>尾部</footer>
+    <!-- 多媒体标签 -->
+    <!-- autoplay 自动播放 谷歌禁用了 使用muted可以解禁 -->
+    <!-- <video src="v2.mp4" autoplay="autoplay" muted="muted"></video> -->
+    <!-- controls 向用户显示播放控件 只播放一次 -->
+    <!-- <video src="v2.mp4" controls="controls"></video> -->
+    <!-- loop  循环播放 -->
+    <!-- <video src="v2.mp4" controls="" controls loop="loop"></video>
+    preload ：{auto 预先加载视频 none 不预先加载{}
+    poster ：imgurl 加载时等待的画面图片 
+    muted :muted 静音播放 -->
+    <!-- 小米做法 -->
+    <video src="v2.mp4" autoplay="autoplay" muted="muted" loop="loop" poster="001.jpeg"></video>
+
+    <audio src="m1.mp3" autoplay="autoplay" controls="controls"></audio>
+</body>
+
+</html>

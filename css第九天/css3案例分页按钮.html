@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            position: relative;
+            height: 100px;
+            width: 500px;
+            border: 2px solid pink;
+            margin: 100px auto;
+        }
+
+        ul {
+            position: absolute;
+            margin-top: 25px;
+
+        }
+
+        li {
+            list-style: none;
+            float: left;
+            height: 50px;
+            width: 50px;
+            text-align: center;
+            line-height: 50px;
+            border: 2px solid rgb(5, 87, 9);
+            border-radius: 25px;
+            transition: all .5s;
+            margin-left: 10px;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        li:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <ul>
+            <li>
+                <a href="#">1</a>
+            </li>
+            <a href="#">
+                <li>
+                    2
+                </li>
+            </a>
+            <li>
+                3
+            </li>
+            <li>
+                4
+            </li>
+            <li>
+                5
+            </li>
+            <li>
+                6
+            </li>
+
+
+    </div>
+    <a href="#">123</a>
+</body>
+
+</html>

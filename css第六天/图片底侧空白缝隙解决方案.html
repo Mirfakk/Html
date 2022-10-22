@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            border: 1px salmon solid;
+        }
+
+        /* 解决方案 */
+        img {
+            /* 方案一，不是基线对齐就可以 */
+            /* vertical-align: bottom; */
+            /* 方案二，图片转换成块级元素 */
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 解决图片底部默认空白缝隙问题 
+    bug 图片底侧会有一个空白缝隙，原因是行内块元素会和文字的基线对齐 -->
+    <div>
+        <img src="img.webp" alt="">
+    </div>
+</body>
+
+</html>

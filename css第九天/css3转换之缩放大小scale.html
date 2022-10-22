@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 以前直接修改宽高会影响隔壁盒子，现在使用scale不会影响宽高 */
+        div {
+            width: 300px;
+            height: 300px;
+            background-color: antiquewhite;
+            margin: 100px auto;
+            transition: all 1s;
+        }
+
+        div:hover {
+            /* transform-origin: right top; */
+            transform: rotate(180deg);
+            /* 宽高各2倍 也可以只写一个数字 默认 x y一样变化 */
+            /* transform: scale(2,2); */
+            /* 修改宽2倍 高度1倍就是不变 */
+            transform: scale(2);
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+    <p>123</p>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            position: relative;
+            width: 200px;
+            height: 30px;
+            border: 2px solid #ccc;
+            margin: 200px auto;
+        }
+
+        div::after {
+            position: absolute;
+            left: 175px;
+            top: 6px;
+            width: 10px;
+            height: 10px;
+            content: '';
+            border-bottom: 2px solid #ccc;
+            border-right: 2px solid #ccc;
+            transform: rotate(45deg);
+            transition: all 0.8s;
+        }
+
+        /* 鼠标经过div 里面的三角旋转 */
+        div:hover::after {
+            position: absolute;
+            left: 175px;
+            top: 6px;
+            width: 10px;
+            height: 10px;
+            content: '';
+            border-bottom: 2px solid #ccc;
+            border-right: 2px solid #ccc;
+            transform: rotate(225deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

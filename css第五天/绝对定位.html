@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 绝对定位在移动时，相对与祖先元素来说得 
+        会根据父元素，如果没有父元素或者父元素没有定位，则根据浏览器文档 Document
+        绝对定位不再占有原先的位置 脱标*/
+        .yeye {
+            position: absolute;
+            width: 1000px;
+            height: 1000px;
+
+            background-color: rgb(214, 30, 61);
+        }
+
+        .father {
+
+            width: 500px;
+            height: 500px;
+
+            background-color: pink;
+        }
+
+        .son {
+            position: absolute;
+            top: 150px;
+            right: 150px;
+            /* left: 20px; */
+            width: 200px;
+            height: 200px;
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="yeye">
+        <div class="father">
+            <div class="son">
+
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

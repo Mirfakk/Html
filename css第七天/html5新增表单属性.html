@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input::placeholder {
+            /* 提示文本可以改色 */
+            color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <!-- required 内容不能为空，否则错误 
+        提示文本 placeholder
+        自动获得焦点 autofocus 
+        自动键入以前输入过的内容，默认打开 autocomplete off/on  m前提是input有name属性，并且成功提交过 -->
+        <input type="search" name="search" required="required" placeholder="提示文本" autofocus="autofocus">
+        <!-- multiple 上传文件可以多选 -->
+        <input type="file" multiple="multiple">
+        <input type="submit">
+    </form>
+
+</body>
+
+</html>
